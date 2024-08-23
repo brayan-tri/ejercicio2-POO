@@ -1,0 +1,34 @@
+
+package poo_1;
+
+public class Operaciones {
+     int suma;
+     int resta;
+     int multiplicacion;
+     int Num1, Num2;
+
+    public Operaciones(int Num1, int Num2) {
+        this.Num1 = Num1;
+        this.Num2 = Num2;
+    }
+     
+    public void calcular(){
+        suma = Num1+Num2;
+        resta = Num1-Num2;
+        multiplicacion = Num1*Num2;
+                
+    }
+
+    public int getSuma() {
+        return suma;
+    }
+
+    public int getResta() {
+        return resta;
+    }
+
+    public int getMultiplicacion() {
+        return multiplicacion;
+    }
+    
+}
