@@ -1,0 +1,54 @@
+
+package poo_1;
+import java.util.Scanner;
+public class POO_1 {
+
+    public static void main(String[] args) {
+      
+        int Num1, Num2;
+        Scanner sc = new Scanner(System.in);
+        
+   
+        System.out.println("agraga valor 1 ");
+        Num1 = sc.nextInt();
+        
+        System.out.println("agraga valor 2 ");
+        Num2 = sc.nextInt();
+        
+        int opcionOperaciones = 0;
+        
+        Operaciones op = new Operaciones(Num1,Num2);
+         op.calcular();
+                    
+                    // Menú de opciones para las operaciones
+                     
+                        System.out.println("Que desea realizar con los 2 numeros ingresados?");
+                        System.out.println("1. Sumar");
+                        System.out.println("2. Restar");
+                        System.out.println("3. Multiplicar");
+                        System.out.println("0. Salir");
+
+                        opcionOperaciones = sc.nextInt();
+
+                        switch (opcionOperaciones) {
+                            case 1:
+                                System.out.println("\n la suma es:"+op.getSuma());
+                                break;
+                            case 2:
+                                  System.out.println("\n la resta es:"+op.getResta());
+                                break;
+                            case 3:
+                                  System.out.println("\n la multiplicacion es:"+op.getMultiplicacion());
+                                break;
+                            case 0: 
+                                System.out.println("Gracias por usar me");
+                                break;
+                            default:
+                                System.out.println("Opcion invalida");
+                                break;
+                        }
+                    
+ 
+    }
+    
+}
